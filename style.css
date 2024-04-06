@@ -1,0 +1,86 @@
+body { font-family: Arial, sans-serif; }
+.container { max-width: 800px; margin: auto; padding: 20px; }
+.about-me { background-color: #f7f7f7; padding: 20px; border-radius: 10px; }
+h1 { color: #333; }
+p { color: #666; }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%; /* Điều chỉnh chiều rộng */
+  }
+
+  h1 {
+    display: inline-block;
+    animation: swing 2s infinite ease-in-out;
+  }
+  
+  
+  /* Thêm padding và margin cho đoạn văn */
+  p {
+    padding: 15px;
+    margin: 15px 0;
+  }
+  
+  /* Thêm font chữ đẹp hơn */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Thêm hiệu ứng chuyển đổi màu sắc cho nền */
+body {
+    animation: gradientBackground 15s ease infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+  }
+  
+  @keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Thêm hiệu ứng 'neumorphism' cho các khối */
+  .container, .about-me {
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+  }
+  
+  /* Thêm hiệu ứng đánh máy cho tiêu đề */
+  h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  /* Thêm hiệu ứng bóng cho hình ảnh */
+  img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  
+  img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
